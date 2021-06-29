@@ -7,6 +7,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inlin
 	padding: 0;
 	font-family: 'Kumbh Sans', sans-serif;
 }
+
 .navbar { /*Navigation Bar edit (Don't Touch) */
 	background: #131313;
 	height: 80px;
@@ -41,8 +42,10 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inlin
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 2rem;
-	position: left;
+	position: relative;
+	left: 0px
 }
+
 
 
 /* Signup Bar*/
@@ -63,7 +66,21 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inlin
 	border: none;
 	outline: none;
 	border-radius: 4px;
-	background: #f77062;
+	background: #ff3300;
+	color: #fff;
+}
+.button3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	padding: 10px 20px;
+	height: 100%;
+	width: 100%
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background: #ff471a;
 	color: #fff;
 }
 .button:hover {
@@ -76,17 +93,17 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inlin
 	transition: all 0.3s ease;
 
 }
-
 /*                                   */
 body {
-  /*background-image: url(./Pictures/demonslayer.png);-->*/
-  background-color: #1a1a1a;
-  height: 500px;
-
+	background-color: #1a1a1a;
+  	height: 500px;
 	background-size: cover; /*Website background image (Change later)*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
-nav p {
+.nav .p {
 	font-family: arial;
 	color: #222;
 	font-size: 24px;
@@ -94,7 +111,7 @@ nav p {
 	float: left;
 	padding : 0px 22px
 }
-nav ul {
+.nav .ul {
 	float: left;
 }
 nav ul li {
@@ -102,13 +119,16 @@ nav ul li {
 	list-style: none;
 	position: relative;
 }
-nav ul li a {
+
+nav ul li a { /*Home events resources About us and Appointment heading*/
 	display: block;
 	font-family: arial;
 	color: #fff; /*font color for home nav header.*/
 	font-size: 25px; /* font size for home page etc. navigation header*/
 	padding: 30px 14px;
 	text-decoration: none;
+	position: relative;
+	/*Left: -80px; (LOL don't use if using 1920x1080 vs mobile phone pov*/
 	
 }
 nav ul li ul {
@@ -144,3 +164,53 @@ nav ul li ul li a:hover{
 }
 Example for Border box
 */
+/*-------------------------------------------------------------------------background Image-------------------------------------------------------------------------*/
+
+.FrontPage {
+	background-image: url("https://wallpapershome.com/images/pages/pic_h/3032.jpg") ;
+	filter: brightness(90%);
+	height: 1200px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	font-family: 'Noto Serif JP', serif;
+	
+  }
+  
+  
+  .FrontText {
+	
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+
+
+/*-------------------------------------------------------------------------Footer-------------------------------------------------------------------------*/
+.FooterMode {
+	color: white;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	position: relative;
+	bottom: -1250px;
+	left: -200px;
+	font-size: 10px;
+
+}
+.builtDiff {
+	font-size: 18px;
+	position:relative;
+	left: -110px;
+}
+.AddressMode {
+	font-size: 14px;
+	position:relative;
+	left: -138px;
+
+}
